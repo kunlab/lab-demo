@@ -23,33 +23,47 @@ public class BuyAspectJ {
     }
 
     /**
-     * 通知类型 @Before
+     * 通知类型(前置) @Before
+     * 同 @Before("execution(* com.kunlab.Spring5.aop.aspectJ.annotation.IBuy.buy(..))")
      */
     @Before("point()")
     public void before(){
         System.out.println("Before...");
     }
 
+    /**
+     * 通知类型（后置）@After
+     */
     @After("point()")
     public void after(){
         System.out.println("After...");
     }
 
+    /**
+     * 通知类型（后置返回结果后执行）
+     */
     @AfterReturning("point()")
     public void afterReturing(){
         System.out.println("AfterReturing...");
     }
 
+    /**
+     * 通知类型（后置抛出异常后执行）
+     */
     @AfterThrowing("point()")
     public void afterThrowing() {
         System.out.println("AfterThrowing...");
     }
 
+    /**
+     * 通知类型（环绕通知）
+     * @param pj 必须有
+     */
     @Around("point()")
     public void around(ProceedingJoinPoint pj) {
         try {
             System.out.println("Around start...");
-            pj.proceed();
+            pj.proceed(); //调用对应的目标类方法
             System.out.println("Around finish.");
         } catch (Throwable throwable) {
             throwable.printStackTrace();
