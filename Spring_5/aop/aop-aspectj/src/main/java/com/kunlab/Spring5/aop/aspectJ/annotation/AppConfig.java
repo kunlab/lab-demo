@@ -1,4 +1,4 @@
-package com.kunlab.Spring5.aop.aspectJ.annotaion;
+package com.kunlab.Spring5.aop.aspectJ.annotation;
 
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
