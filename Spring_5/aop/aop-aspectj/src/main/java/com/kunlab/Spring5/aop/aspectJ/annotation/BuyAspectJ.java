@@ -18,7 +18,7 @@ public class BuyAspectJ {
      * 切点：com.kunlab.Spring5.aop.aspectJ.annotation.IBuy.buy()
      * AspectJ切点指示器 execution(); 方法返回类型：任何类型（*） 方法参数：任意参数（..）
      */
-    @Pointcut("execution(* com.kunlab.Spring5.aop.aspectJ.annotation.IBuy.buy(..))")
+    @Pointcut("execution(* com.kunlab.Spring5.aop.aspectJ.annotation.IBuy.buy(..)) && within(Girl)")
     public void point() {
     }
 
