@@ -5,7 +5,7 @@
 
     <!-- The Basics -->
     <groupId>com.kunlab</groupId>
-    <artifactId>lab-demo-Spring5-aop-aspectJ</artifactId>
+    <artifactId>demo-Spring5-aop-aspectJ-annotation</artifactId>
     <version>1.0</version>
     <packaging>jar</packaging>
 
