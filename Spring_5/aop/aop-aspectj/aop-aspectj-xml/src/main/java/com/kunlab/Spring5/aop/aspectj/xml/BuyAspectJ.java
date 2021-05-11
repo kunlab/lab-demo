@@ -1,5 +1,6 @@
 package com.kunlab.Spring5.aop.aspectj.xml;
 
+import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.ProceedingJoinPoint;
 
 /**
@@ -12,9 +13,10 @@ public class BuyAspectJ {
 
     /**
      * 通知类型(前置) @Before
+     * @param jp 用于描述连接点（目标方法），获取目标方法名等
      */
-    public void before(){
-        System.out.println("Before...");
+    public void before(JoinPoint jp){
+        System.out.println("前置通知: " + jp.getSignature().getName());
     }
 
     /**
