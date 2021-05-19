@@ -7,7 +7,7 @@ import org.springframework.context.annotation.Configuration;
  * @author likun
  * @date 2021/5/19
  */
-@Configuration
-@ComponentScan
+//@Configuration
+//@ComponentScan
 public class CDPlayerConfig {
 }
