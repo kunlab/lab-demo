@@ -5,7 +5,7 @@
 
     <!-- The Basics -->
     <groupId>com.kunlab</groupId>
-    <artifactId>demo-Spring5-aop-aspectJ-annotation</artifactId>
+    <artifactId>demo-Spring4-aop-aspectJ-xml</artifactId>
     <version>1.0</version>
     <packaging>jar</packaging>
 
@@ -18,7 +18,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 
-        <spring.version>5.2.14.RELEASE</spring.version>
+        <spring.version>4.3.25.RELEASE</spring.version>
     </properties>
 
 
