@@ -12,8 +12,8 @@ import static org.junit.Assert.assertNotNull;
  * @author likun
  * @date 2021/5/19
  */
-@RunWith(SpringJUnit4ClassRunner.class)
-@ContextConfiguration(value={"classpath:applicationContext.xml"})
+@RunWith(SpringJUnit4ClassRunner.class) //使用 SpringJUnit4ClassRunner 创建Spring文
+@ContextConfiguration(value={"classpath:applicationContext.xml"}) //@ContextConfiguration 加载配置信息
 public class AppXmlTest {
 
     @Autowired
